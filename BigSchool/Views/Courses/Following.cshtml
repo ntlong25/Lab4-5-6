@@ -1,0 +1,47 @@
+﻿@model BigSchool.ViewModels.FollowingsViewModel
+@{
+    ViewBag.Title = "Following";
+    @Styles.Render("~/Content/style.css")
+}
+
+
+<div class="row">
+    <ul class="course">
+        @foreach (var lecturer in Model.UpFollowings)
+        {
+            <li>
+                <div class="details">
+                    <span class="lecturer">
+                        @lecturer.Followee.Name
+                        @if (Model.ShowAction)
+                        {
+                            <button class="btn btn-default btn-sm js-toggle-follow" data-user-id="@lecturer.FolloweeId">Follow</button>
+                        }
+
+                    </span>
+                </div>
+            </li>
+        }
+    </ul>
+    @section scripts
+    {
+        <script>
+            $(document).ready(function () {
+                $(".js-toggle-follow").click(function (e) {
+                    var button = $(e.target);
+                    $.post("api/followings", { followeeId: button.attr("data-user-id") })
+                        .done(function () {
+                            button.text("Following");
+                        })
+                        .fail(function () {
+                            alert("Something failed!");
+                        });
+                });
+            });
+        </script>
+    }
+</div>
+
+
+
+

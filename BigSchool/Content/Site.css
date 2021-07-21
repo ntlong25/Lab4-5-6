@@ -7,6 +7,7 @@
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 100px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -31,8 +32,17 @@ textarea {
     .navbar-inverse .navbar-brand {
         color: #ff0000;
     }
+
     .navbar-inverse .navbar-nav > li > a {
         color: #ffffff;
     }
 
- 
+    .course > li .action{
+        display: none;
+        left:70px;
+        position: absolute;
+    }
+.course > li:hover .action {
+    display: block;
+}
+

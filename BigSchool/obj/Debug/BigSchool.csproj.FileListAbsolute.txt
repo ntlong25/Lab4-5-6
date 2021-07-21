@@ -241,3 +241,4 @@ C:\Users\long2\Desktop\Lab456\Lab4-5-6\BigSchool\obj\Debug\BigSchool.csproj.Copy
 C:\Users\long2\Desktop\Lab456\Lab4-5-6\BigSchool\obj\Debug\BigSchool.dll
 C:\Users\long2\Desktop\Lab456\Lab4-5-6\BigSchool\obj\Debug\BigSchool.pdb
 C:\Users\long2\Desktop\Lab456\Lab4-5-6\BigSchool\obj\Debug\BigSchool.Migrations.AddFollowingsTable.resources
+C:\Users\long2\Desktop\Lab456\Lab4-5-6\BigSchool\obj\Debug\BigSchool.Migrations.AddIsCanceledColumnToCourse.resources
